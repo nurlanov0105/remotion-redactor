@@ -3,6 +3,9 @@
       "env": {
          "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
          "PUPPETEER_EXECUTABLE_PATH": "/usr/bin/google-chrome-stable"
+      },
+      "config": {
+         "distDir": "build"
       }
    },
    "builds": [
@@ -13,5 +16,6 @@
             "postinstall": "sh install-deps.sh"
          }
       }
-   ]
+   ],
+   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
