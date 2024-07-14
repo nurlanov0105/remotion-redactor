@@ -1,0 +1,17 @@
+{
+   "build": {
+      "env": {
+         "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true",
+         "PUPPETEER_EXECUTABLE_PATH": "/usr/bin/google-chrome-stable"
+      }
+   },
+   "builds": [
+      {
+         "src": "package.json",
+         "use": "@vercel/node",
+         "config": {
+            "postinstall": "sh install-deps.sh"
+         }
+      }
+   ]
+}
