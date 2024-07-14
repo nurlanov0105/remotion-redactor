@@ -24,7 +24,6 @@
    },
    "scripts": {
       "start": "remotion studio",
-      "postinstall": "bash postinstall.sh",
       "build": "remotion render MyComposition out/video.mp4",
       "upgrade": "remotion upgrade",
       "test": "eslint src && tsc"
